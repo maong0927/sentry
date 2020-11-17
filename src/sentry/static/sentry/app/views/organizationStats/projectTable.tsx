@@ -41,7 +41,7 @@ const ProjectTable = ({projectMap, projectTotals, orgTotal, organization}: Props
         return null;
       }
 
-      const projectLink = `/organizations/${organization.slug}/issues/?project_id=${project.id}`;
+      const projectLink = `/organizations/${organization.slug}/issues/?project=${project.id}`;
 
       return (
         <StyledProjectTableLayout key={index}>
